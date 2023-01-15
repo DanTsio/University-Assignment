@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <title>Layout Grid</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='websitestyle.css'>
+    <script src="websitejs.js"></script>
+    <script src="app.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="grid">
+        <header>Καββαδίας</header>
+        <nav class="style">
+            <button class="button" onclick="myFunction(1);">Βιογραφία</button>
+            <button class="button" onclick="myFunction(2);">Φωτογραφίες</button>
+            <button class="button" onclick="myFunction(3);">Έργα</button>
+            <button class="button" onclick="myFunction(4);">Σύνδεσμοι</button>
+            <button class="button" onclick="myFunction(5);">Διαχείριση</button>
+        </nav>
+        <aside>
+            <div id="myDIV_1" class="default">
+                Button 1 is selected.    
+            </div>
+            <div id="myDIV_2" class="default">
+                <button class="button" onclick="SubMenu(1);">Καββαδίας</button>    
+            </div>
+            <div id="myDIV_3" class="default">
+                Button 3 is selected.    
+            </div>
+            <div id="myDIV_4" class="default">
+                Button 4 is selected.    
+            </div>
+            <div id="myDIV_5" class="default">
+                Button 5 is selected.    
+            </div>
+        </aside>
+        <main>
+            <div id="SubMenu1" class="default">
+                <ul>
+                    <li>
+                        <img src="img/Kavadias1.jpg">
+                    </li>
+                    <li>
+                        <img src="img/Kavadias2.jpeg">
+                    </li>
+                    <li>
+                        <img src="img/Kavadias3.jpg">
+                    </li>
+                    <li>
+                        <img src="img/Kavadias4.png">
+                    </li>
+                    <li>
+                        <img src="img/Kavadias5.jpg">
+                    </li>
+                </ul>
+            </div>
+        </main>    
+        <footer class="text">Γεώργιος Δαναός Τσιολάκης</footer>
+    </div>    
+
+</body>
+<html>
